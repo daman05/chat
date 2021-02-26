@@ -6,7 +6,7 @@ use app\models\Message;
 
 class SiteController extends AppController
 {
-    public $defaultAction = 'contact';
+    // public $defaultAction = 'contact';
 
     public function actionIndex()
     {
@@ -48,8 +48,8 @@ class SiteController extends AppController
         return $this->render('chat', compact('model', 'messages'));
     }
 
-    public function actionDelMessage($id)
-    {
-        debug($id);
-    }
+    // public function actionDelMessage($id)
+    // {
+    //    debug($id);
+    // }
 }
